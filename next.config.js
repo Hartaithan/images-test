@@ -1,19 +1,14 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   images: {
     remotePatterns: [
       {
+        protocol: "https",
+        hostname: "**",
+      },
+      {
         protocol: "http",
-        hostname: "static-resource.np.community.playstation.net",
-      },
-      {
-        protocol: "https",
-        hostname: "image.api.playstation.com",
-      },
-      {
-        protocol: "https",
-        hostname: "psnobj.prod.dl.playstation.net",
+        hostname: "**",
       },
     ],
   },
